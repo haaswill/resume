@@ -1,3 +1,99 @@
+html, body {
+  color: #eeeeee;
+  background-color: #3f3f3f;
+  font-family: 'Inconsolata', sans-serif;
+  height: 100%;
+}
+
+body, h2, h3, h4, h6, p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  font-style: inherit;
+  text-decoration: none;
+}
+
+.blink {
+  animation: blink 0.5s infinite;
+}
+
 .container {
-  display: grid
+  height: 100%;
+}
+
+.container-title {
+  align-items: center;
+  background-color: #1b1b1b;
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+  width: 30em;
+}
+
+.contact-info {
+  align-items: center;
+  background: url(/images/hideout.svg);
+  background-color: #303030;
+  background-size: 4em;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  justify-content: center;
+  padding: 1em;
+}
+
+.contact-info address {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.contact-info address {
+  padding: 0.5em;
+}
+
+.contact-info address a {
+}
+
+.contact-info address p {
+}
+
+.contact-info h4 {
+  text-align: center;
+}
+
+.education {
+}
+
+.resume {
+  height: 100%;
+}
+
+.subtitle {
+  font-size: 28px;
+  text-align: center;
+}
+
+.skills {
+}
+
+.summary {
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0.4em 0; 
+  text-align: center;
+}
+
+.work-experience {
+}
+
+@keyframes blink{
+  to { opacity: .0; }
 }

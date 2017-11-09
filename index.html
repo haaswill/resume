@@ -1,63 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title></title>
+  <title>Free Resume</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <div class="container">
-    <div class="contact-info">
-      <h2>Willian Haas</h2>
-      <h4 class="subheading">Freelance Web Developer</h4>
-      <h6>haaswillian@gmail.com</h6>
-    </div>
-    <div class="summary">
+    <div class="resume">
+      <div class="contact-info">
+        <div class="container-title">
+          <p class="blinking-word title" id="title"></p>
+          <p class="title blink">|</p>
+        </div>
+        <p class="blinking-word subtitle">Freelance Web Developer</p>
+        <address>
+          <a href="mailto:haaswillian@gmail.com">haaswillian@gmail.com</a>
+          <p>West Vancouver - British Columbia</p>
+        </address>
+      </div>
+      <div class="summary">
 
-    </div>
-    <div class="work-experience">
-      <h3 class="title">Work Experience</h3>
-      <div class="subdivision">
-        <h4 class="subheading">Full Stack .NET Developer</h4>
-        <h4 class="subheading">Atinfo - Flores da Cunha, Brazil</h4>
-        <h4 class="subheading">03/2016 - 06/2017</h4>
+      </div>
+      <div class="work-experience">
+        <h3 class="title">Work Experience</h3>
+        <div class="subdivision">
+          <h4 class="subheading">Full Stack .NET Developer</h4>
+          <h4 class="subheading">Atinfo - Flores da Cunha, Brazil</h4>
+          <h4 class="subheading">03/2016 - 06/2017</h4>
+          <ul class="death-by-bullet-points">
+            <li>
+              Redesigned a PHP web app used by the representatives of a furniture company using mainly .NET frameworks: Web API and MVC.
+            </li>
+            <li>
+              Redesigned an Apex CRM using mainly .NET frameworks: Web API and MVC.
+            </li>
+          </ul>
+        </div>
+        <div class="subdivision">
+          <h4 class="subheading">Full Stack Junior .NET Developer</h4>
+          <h4 class="subheading">Ahead — Caxias do Sul, Brazil</h4>
+          <h4 class="subheading">09/2015 - 02/2016</h4>
+          <ul class="death-by-bullet-points">
+            <li>
+              Developed a program to autogenerate common code files for the company’s ERP web app.
+            </li>
+            <li>
+              Helped developing the ERP web app using the MVC .NET framework.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="education">
+        <h3 class="title">Formal Education</h3>
+        <div class="subdivision">
+          <h4 class="subheading">CETEC — Caxias do Sul, Brazil</h4>
+          <h4 class="subheading">03/2013 - 08/2015</h4>
+          <p>IT Support/Programming certificate and 6 months internship.</p>
+        </div>
+        <div class="subdivision">
+          <h4 class="subheading">CETEC — Caxias do Sul, Brazil</h4>
+          <h4 class="subheading">03/2012 - 12/2014</h4>
+          <p>High School.</p>
+        </div>
+        <h3 class="title">Informal Education</h3>
         <ul class="death-by-bullet-points">
-          <li>
-            Redesigned a PHP web app used by the representatives of a furniture company using mainly .NET frameworks: Web API and MVC.
-          </li>
-          <li>
-            Redesigned an Apex CRM using mainly .NET frameworks: Web API and MVC.
-          </li>
+          <li>React Native: Advanced Concepts - Udemy</li>
+          <li>Advanced React and Redux - Udemy</li>
         </ul>
       </div>
-      <div class="subdivision">
-        <h4 class="subheading">Full Stack Junior .NET Developer</h4>
-        <h4 class="subheading">Ahead — Caxias do Sul, Brazil</h4>
-        <h4 class="subheading">09/2015 - 02/2016</h4>
+      <div class="skills">
+        <h3 class="title">Skills</h3>
         <ul class="death-by-bullet-points">
-          <li>
-            Developed a program to autogenerate common code files for the company’s ERP web app.
-          </li>
-          <li>
-            Helped developing the ERP web app using the MVC .NET framework.
-          </li>
+          <li>Javascript (ES2015, ES2016)</li>
+          <li>React Native (v0.45, Expo 18)</li>
+          <li>React (v16)</li>
+          <li>Node (v8)</li>
+          <li>SCSS</li>
+          <li>.NET(Web API v2.0, MVC v6.0)</li>
         </ul>
       </div>
-    </div>
-    <div class="education">
-      <h3 class="title">Formal Education</h3>
-      <div class="subdivision">
-
-      </div>
-      <h3 class="title">Informal Education</h3>
-      <div class="subdivision">
-
-      </div>
-    </div>
-    <div class="skills">
-
     </div>
   </div>
+  <script type="text/javascript">
+    const words = ["hi i'm will."];
+    let i = 0;
+    let timer;
+    function typingEffect() {
+      let word = words[i].split("");
+      var loopTyping = function () {
+        if (word.length > 0) {
+          document.getElementById('title').innerHTML += word.shift();
+        } else {
+          clearTimeout(timer);
+          deletingEffect();
+          return false;
+        };
+        timer = setTimeout(loopTyping, 500);
+      };
+      loopTyping();
+    }
+    function deletingEffect() {
+      let word = words[i].split("");
+      var loopDeleting = function () {
+        if (word.length > 0) {
+          word.pop();
+          document.getElementById('title').innerHTML = word.join("");
+        } else {
+          if (words.length > (i + 1)) {
+            i++;
+          } else {
+            i = 0;
+          };
+          clearTimeout(timer);
+          typingEffect();
+          return false;
+        };
+        timer = setTimeout(loopDeleting, 200);
+      };
+      loopDeleting();
+    }
+    typingEffect();
+  </script>
 </body>
 </html>
