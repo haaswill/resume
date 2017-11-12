@@ -31,6 +31,15 @@ a {
   border-left: 1em solid #fbfbfb;
 }
 
+.contact-info {
+  background-color: #1b1b1b;
+  font-size: 16px;
+  font-style: unset;
+  padding: 1em 0;
+  text-align: center;
+  width: 100%;
+}
+
 .container {
   height: 100%;
 }
@@ -44,7 +53,11 @@ a {
   width: 30em;
 }
 
-.contact-info {
+.email:hover {
+  color: #fd084a;
+}
+
+.header {
   align-items: center;
   background: url(/images/hideout.svg);
   background-color: #303030;
@@ -54,31 +67,6 @@ a {
   height: 70vh;
   justify-content: center;
   padding: 1em;
-}
-
-.contact-info address {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  font-size: 16px;
-  font-style: italic;
-}
-
-.contact-info address {
-  padding: 0.5em;
-}
-
-.contact-info address a {
-}
-
-.contact-info address p {
-}
-
-.contact-info h4 {
-  text-align: center;
-}
-
-.education {
 }
 
 line:nth-child(2) {
@@ -114,28 +102,22 @@ line:nth-child(6) {
 }
 
 .subtitle line {
-  animation-duration: 1s;
-	animation-timing-function: ease-out;
   animation-direction: alternate;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
 	stroke-width: 10px;
 	transform-origin: 50% 50%;
 }
 
 .subtitle text {
-  animation-name: text;
   animation-duration: 2s;
-  animation-timing-function: ease-in;
   animation-fill-mode: forwards;
+  animation-name: text;
+  animation-timing-function: ease-in;
   fill: #fbfbfb;
   font-size: 30px;
   opacity: 0;
-}
-
-.skills {
-}
-
-.summary {
 }
 
 .title {
@@ -143,9 +125,6 @@ line:nth-child(6) {
   font-weight: 800;
   margin: 0.4em 0; 
   text-align: center;
-}
-
-.work-experience {
 }
 
 @keyframes backslash {
