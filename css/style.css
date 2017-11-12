@@ -16,7 +16,19 @@ a {
 }
 
 .blink {
-  animation: blink 0.5s infinite;
+  animation: blink 0.3s infinite;
+}
+
+.body {
+  border-left: 1em solid #fbfbfb;
+}
+
+.body::after {
+  border-left: 1em solid #fbfbfb;
+}
+
+.body::before {
+  border-left: 1em solid #fbfbfb;
 }
 
 .container {
@@ -69,13 +81,53 @@ a {
 .education {
 }
 
+line:nth-child(2) {
+	animation-name: less-than-one;
+}
+
+line:nth-child(3) {
+	animation-name: less-than-two;
+}
+
+line:nth-child(4) {
+	animation-name: backslash;
+}
+
+line:nth-child(5) {
+	animation-name: greater-than-one;
+}
+
+line:nth-child(6) {
+	animation-name: greater-than-two;
+}
+
 .resume {
   height: 100%;
 }
 
 .subtitle {
-  font-size: 28px;
-  text-align: center;
+  margin: 1em 0;
+  stroke: #fbfbfb;
+	transform: translatez(0);
+}
+
+.subtitle line {
+  animation-duration: 1s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	stroke-width: 10px;
+	transform-origin: 50% 50%;
+}
+
+.subtitle text {
+  animation-name: text;
+  animation-duration: 2s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: infinite;
+  fill: #fbfbfb;
+  font-size: 30px;
+  opacity: 0;
 }
 
 .skills {
@@ -94,6 +146,48 @@ a {
 .work-experience {
 }
 
+@keyframes backslash {
+	100% {
+		transform: translatex(200px) skewx(-30deg);
+	}
+}
+
 @keyframes blink{
-  to { opacity: .0; }
+  to { opacity: 0; }
+}
+
+@keyframes less-than-one {
+	100% {
+		transform: translatex(-200px) skewx(-30deg);
+	}
+}
+
+@keyframes less-than-two {
+	100% {
+		transform: translatex(-200px) skewx(30deg);
+	}
+}
+
+@keyframes greater-than-one {
+	100% {
+		transform: translatex(240px) skewx(30deg);
+	}
+}
+
+@keyframes greater-than-two {
+	100% {
+		transform: translatex(240px) skewx(-30deg);
+	}
+}
+
+@keyframes text {
+  30% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+	65% {
+		opacity: 0;
+	}
 }
