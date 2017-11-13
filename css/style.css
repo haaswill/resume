@@ -19,18 +19,6 @@ a {
   animation: blink 0.3s infinite;
 }
 
-.body {
-  border-left: 1em solid #fbfbfb;
-}
-
-.body::after {
-  border-left: 1em solid #fbfbfb;
-}
-
-.body::before {
-  border-left: 1em solid #fbfbfb;
-}
-
 .contact-info {
   background-color: #1b1b1b;
   font-size: 16px;
@@ -89,6 +77,43 @@ line:nth-child(6) {
 	animation-name: greater-than-two;
 }
 
+.node {
+  background-color: red;
+  border-radius: 100%;
+  height: 2em;
+  margin-top: 16px;
+  width: 2em;
+}
+
+.progress-bar {
+  background: #1b1b1b;
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.12), 0 -1px 2px rgba(0, 0, 0, 0.24);
+  bottom: 0;
+  height: 48px;
+  position: fixed;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  width: 100%;
+  z-index: 9999;
+}
+
+.progress-bar:hover {
+  height: 100px;
+}
+
+.progress-bar ul {
+  align-items: stretch;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.progress-bar ul>li {
+  flex: 1;
+}
+
 .resume {
   height: 100%;
 }
@@ -110,6 +135,25 @@ line:nth-child(6) {
 	transform-origin: 50% 50%;
 }
 
+.step {
+  display: table-cell;
+  overflow: visible;
+  padding: 1em;
+  position: relative;
+  text-align: center;
+}
+
+.step::before {
+  background-color: red;
+  display: block;
+  content: '';
+  height: 1em;
+  position: absolute;
+  left: 2em;
+  top: 57px;
+  width: 100%;
+}
+
 .subtitle text {
   animation-duration: 2s;
   animation-fill-mode: forwards;
@@ -129,7 +173,7 @@ line:nth-child(6) {
 
 @keyframes backslash {
 	100% {
-		transform: translatex(200px) skewx(-30deg);
+		transform: translatex(200px) skewx(-20deg);
 	}
 }
 
