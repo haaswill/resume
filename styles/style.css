@@ -47,7 +47,7 @@ a {
 
 .header {
   align-items: center;
-  background: url(/images/hideout.svg);
+  background: url(./images/hideout.svg);
   background-color: #303030;
   background-size: 4em;
   display: flex;
