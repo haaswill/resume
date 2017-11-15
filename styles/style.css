@@ -1,3 +1,5 @@
+/* BASE */
+
 html, body {
   color: #eeeeee;
   background-color: #3f3f3f;
@@ -15,8 +17,10 @@ a {
   text-decoration: none;
 }
 
-.blink {
-  animation: blink 0.3s infinite;
+/* HEADER */
+
+.email:hover {
+  color: #fd084a;
 }
 
 .contact-info {
@@ -28,21 +32,13 @@ a {
   width: 100%;
 }
 
-.container {
-  height: 100%;
-}
-
-.container-title {
+.title-container {
   align-items: center;
   background-color: #1b1b1b;
   display: flex;
   justify-content: center;
   padding: 0.5em;
   width: 30em;
-}
-
-.email:hover {
-  color: #fd084a;
 }
 
 .header {
@@ -57,31 +53,22 @@ a {
   padding: 1em;
 }
 
-line:nth-child(2) {
-	animation-name: less-than-one;
+/* BODY */
+
+.container {
+  height: 100%;
 }
 
-line:nth-child(3) {
-	animation-name: less-than-two;
+.resume {
+  height: 100%;
 }
 
-line:nth-child(4) {
-	animation-name: backslash;
-}
-
-line:nth-child(5) {
-	animation-name: greater-than-one;
-}
-
-line:nth-child(6) {
-	animation-name: greater-than-two;
-}
+/* PROGRESS BAR */
 
 .node {
-  background-color: red;
+  background-color: #fbfbfb;
   border-radius: 100%;
   height: 2em;
-  margin-top: 16px;
   width: 2em;
 }
 
@@ -114,8 +101,37 @@ line:nth-child(6) {
   flex: 1;
 }
 
-.resume {
-  height: 100%;
+.step {
+  text-align: center;
+}
+
+.step:not(:last-child):before {
+  background-color: #fbfbfb;
+  content: '';
+  height: 1em;
+  width: 100%;
+}
+
+/* SUBTITLE */
+
+line:nth-child(2) {
+	animation-name: less-than-one;
+}
+
+line:nth-child(3) {
+	animation-name: less-than-two;
+}
+
+line:nth-child(4) {
+	animation-name: backslash;
+}
+
+line:nth-child(5) {
+	animation-name: greater-than-one;
+}
+
+line:nth-child(6) {
+	animation-name: greater-than-two;
 }
 
 .subtitle {
@@ -135,25 +151,6 @@ line:nth-child(6) {
 	transform-origin: 50% 50%;
 }
 
-.step {
-  display: table-cell;
-  overflow: visible;
-  padding: 1em;
-  position: relative;
-  text-align: center;
-}
-
-.step::before {
-  background-color: red;
-  display: block;
-  content: '';
-  height: 1em;
-  position: absolute;
-  left: 2em;
-  top: 57px;
-  width: 100%;
-}
-
 .subtitle text {
   animation-duration: 2s;
   animation-fill-mode: forwards;
@@ -164,21 +161,10 @@ line:nth-child(6) {
   opacity: 0;
 }
 
-.title {
-  font-size: 48px;
-  font-weight: 800;
-  margin: 0.4em 0; 
-  text-align: center;
-}
-
 @keyframes backslash {
 	100% {
 		transform: translatex(200px) skewx(-20deg);
 	}
-}
-
-@keyframes blink{
-  to { opacity: 0; }
 }
 
 @keyframes less-than-one {
@@ -215,4 +201,21 @@ line:nth-child(6) {
   100% {
     opacity: 1;
   }
+}
+
+/* TITLE */
+
+.blink {
+  animation: blink 0.3s infinite;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0.4em 0; 
+  text-align: center;
+}
+
+@keyframes blink{
+  to { opacity: 0; }
 }
