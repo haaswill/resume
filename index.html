@@ -11,12 +11,12 @@
   <div class="container">
     <div class="resume">
       <section class="header">
-        <div class="title-container">
-          <p class="title" id="title"></p>
-          <p class="title blink">|</p>
+        <div class="header-title-container">
+          <p class="header-title" id="title"></p>
+          <p class="header-title blink">|</p>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" height="50" width="500" class="subtitle">
-          <text x="60" y="35">freelance web developer</text>
+          <text x="60" y="35">full-stack web developer</text>
           <line x1="230" y1="0" x2="230" y2="25" />
           <line x1="230" y1="25" x2="230" y2="50" />
           <line x1="230" y1="0" x2="230" y2="50" />
@@ -27,12 +27,14 @@
       <address class="contact-info">
         <p>
           <a class="email" href="mailto:haaswillian@gmail.com">haaswillian@gmail.com</a>
-          / West Vancouver, British Columbia - Canada
+          / Vancouver, British Columbia - Canada
         </p>
       </address>
       <div class="body">
         <section class="summary">
-          <h3 class="title">Summary</h3>
+          <div class="title-background">
+            <h3 class="title">#Summary</h3>
+          </div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu nunc sed dolor ornare consectetur. Morbi eu pretium nisl,
             quis convallis metus. Praesent lobortis consequat tortor. Proin vehicula vehicula ante id pharetra. Quisque tincidunt
@@ -44,7 +46,9 @@
           </p>
         </section>
         <section class="work-experience">
-          <h3 class="title">Work Experience</h3>
+          <div class="title-background">
+            <h3 class="title">#Work Experience</h3>
+          </div>
           <div class="subdivision">
             <h4 class="subheading">Full Stack .NET Developer</h4>
             <h4 class="subheading">Atinfo - Flores da Cunha, Brazil</h4>
@@ -73,7 +77,9 @@
           </div>
         </section>
         <section class="education">
-          <h3 class="title">Formal Education</h3>
+          <div class="title-background">
+            <h3 class="title">#Education</h3>
+          </div>
           <div class="subdivision">
             <h4 class="subheading">CETEC — Caxias do Sul, Brazil</h4>
             <h4 class="subheading">03/2013 - 08/2015</h4>
@@ -84,14 +90,15 @@
             <h4 class="subheading">03/2012 - 12/2014</h4>
             <p>High School.</p>
           </div>
-          <h3 class="title">Informal Education</h3>
           <ul class="death-by-bullet-points">
             <li>React Native: Advanced Concepts - Udemy</li>
             <li>Advanced React and Redux - Udemy</li>
           </ul>
         </section>
         <section class="skills">
-          <h3 class="title">Skills</h3>
+          <div class="title-background">
+            <h3 class="title">#Skills</h3>
+          </div>
           <ul class="death-by-bullet-points">
             <li>Javascript (ES2015, ES2016)</li>
             <li>React Native (v0.45, Expo 18)</li>
@@ -100,6 +107,16 @@
             <li>SCSS</li>
             <li>.NET(Web API v2.0, MVC v6.0)</li>
           </ul>
+        </section>
+        <section class="meme">
+          <form>
+            <h3>What is my favourite programming language today?</h3>
+            <input type="checkbox" name="csharp" value="C#">
+            <input type="checkbox" name="javascript" value="Javascript">
+            <input type="checkbox" name="java" value="Java">
+          </form>
+          <input type="button" name="get-meme" value="GET MEME!">
+          <div class="meme-container"></div>
         </section>
         <aside class="progress-bar">
           <ul>
@@ -124,7 +141,7 @@
               </div>
             </li>
             <li class="step">
-              <a href="#prizes" class="step-title">Prize</a>
+              <a href="#meme" class="step-title">MEME</a>
               <div class="node">
               </div>
             </li>
