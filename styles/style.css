@@ -25,9 +25,15 @@ a {
 
 .contact-info {
   background-color: #1b1b1b;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.16), 0 0 6px rgba(0, 0, 0, 0.23);
+  display: flex;
+  flex-direction: column;
   font-size: 16px;
   font-style: unset;
+  justify-content: center;
+  height: 5vh;
   padding: 1em 0;
+  z-index: 999;
   text-align: center;
   width: 100%;
 }
@@ -47,7 +53,7 @@ a {
   background-size: 5em;
   display: flex;
   flex-direction: column;
-  height: 70vh;
+  height: 90vh;
   justify-content: center;
   padding: 1em;
 }
@@ -163,48 +169,63 @@ line:nth-child(6) {
 
 /* BODY */
 
+.content {
+  background-color: #1b1b1b;
+  font-size: 20px;
+  padding: 2em;
+  width: 50vw;
+}
+
+.main-section {
+  align-items: center;
+  border-bottom: 7vh #1b1b1b solid;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  padding: 2em;
+}
+
+.main-section > .title, .content {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.16), 0 0 6px rgba(0, 0, 0, 0.23);
+  z-index: 999;
+}
+
 .title {
   background-color: #1b1b1b;
   color: #fbfbfb;
+  display: inline-block;
   font-size: 48px;
   font-weight: 800;
   letter-spacing: 2px;
+  margin: 1em 0;
   padding: 0.5em;
   text-align: center;
   text-transform: uppercase;
+  width: auto;
 }
 
-.title-background {
-  align-items: center;
-  background-size: 5em;
-  display: flex;
-  justify-content: center;
-  height: 30vh;
+.summary {
+  background: url(./images/x-equals.svg);
+  background-color: #1dabb8;
+  background-size: 10em;
 }
 
-.summary .title-background {
-  background: url(./images/architect.svg);
-  background-color: #3a1426;
-}
-
-.work-experience .title-background {
-  background: url(./images/plus.svg);
-  background-color: #358573;
-}
-
-.education .title-background {
-  background: url(./images/overlapping.svg);
-  background-color: #491b94;
-}
-
-.education .title-background {
+.work-experience {
   background: url(./images/yyy.svg);
-  background-color: #be981c;
+  background-color: #fcb941;
+  background-size: 10em;
 }
 
-.skills .title-background {
-  background: url(./images/temple.svg);
-  background-color: #16e77f;
+.education {
+  background: url(./images/overlapping-hexagons.svg);
+  background-color: #897fba;
+  background-size: 10em;
+}
+
+.skills {
+  background: url(./images/hexagons.svg);
+  background-color: #FC6042;
+  background-size: 4em;
 }
 
 .container {
@@ -215,51 +236,10 @@ line:nth-child(6) {
   height: 100%;
 }
 
-/* PROGRESS BAR */
+/* BOTTOM MENU */
 
-.node {
-  background-color: #fbfbfb;
-  border-radius: 100%;
-  height: 2em;
-  width: 2em;
-}
-
-.progress-bar {
-  background: #1b1b1b;
-  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.12), 0 -1px 2px rgba(0, 0, 0, 0.24);
-  bottom: 0;
-  height: 48px;
+.bottom-menu {
+  background-color: #1b1b1b;
+  height: 10vh;
   position: fixed;
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  width: 100%;
-  z-index: 9999;
-}
-
-.progress-bar:hover {
-  height: 100px;
-}
-
-.progress-bar ul {
-  align-items: stretch;
-  display: flex;
-  justify-content: space-around;
-  height: 100%;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.progress-bar ul>li {
-  flex: 1;
-}
-
-.step {
-  text-align: center;
-}
-
-.step:not(:last-child):before {
-  background-color: #fbfbfb;
-  content: '';
-  height: 1em;
-  width: 100%;
 }
