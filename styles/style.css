@@ -97,6 +97,8 @@ line:nth-child(6) {
 .subtitle {
   background-color: #363131;
   margin: 1em 0;
+  max-height: 50px;
+  max-width: 500;
   padding: 1em;
   stroke: #fbfbfb;
 	transform: translatez(0);
@@ -119,6 +121,7 @@ line:nth-child(6) {
   fill: #fbfbfb;
   font-size: 30px;
   opacity: 0;
+  width: 100%;
 }
 
 @keyframes backslash {
@@ -167,22 +170,45 @@ line:nth-child(6) {
   }
 }
 
+@media screen and (max-width: 519px) and (min-width: 300px) {
+  .header-title {
+    font-size: 40px;    
+  } 
+
+  .header-title-container {
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 299px) {
+  .header-title {
+    font-size: 36px;    
+  } 
+
+  .header-title-container {
+    width: 250px;
+  }
+}
+
 /* BODY */
 
 .content {
   background-color: #1b1b1b;
   font-size: 20px;
   padding: 2em;
-  width: 50vw;
+  width: 50%;
 }
 
 .main-section {
   align-items: center;
-  border-bottom: 7vh #1b1b1b solid;
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  height: auto;
   padding: 2em;
+}
+
+.main-section:not(:last-of-type) {
+  border-bottom: 7vh #1b1b1b solid;
 }
 
 .main-section > .title, .content {
@@ -207,25 +233,25 @@ line:nth-child(6) {
 .summary {
   background: url(./images/x-equals.svg);
   background-color: #1dabb8;
-  background-size: 10em;
+  background-size: 160px;
 }
 
 .work-experience {
   background: url(./images/yyy.svg);
   background-color: #fcb941;
-  background-size: 10em;
+  background-size: 160px;
 }
 
 .education {
   background: url(./images/overlapping-hexagons.svg);
   background-color: #897fba;
-  background-size: 10em;
+  background-size: 160px;
 }
 
 .skills {
   background: url(./images/hexagons.svg);
   background-color: #FC6042;
-  background-size: 4em;
+  background-size: 64px;
 }
 
 .container {
@@ -234,6 +260,71 @@ line:nth-child(6) {
 
 .resume {
   height: 100%;
+}
+
+@media screen and (max-width: 699px) and (min-width: 520px) {
+  .content {
+    font-size: 16px;
+    padding: 2em;
+    width: 80%;
+  }
+
+}
+
+@media screen and (max-width: 519px) and (min-width: 300px) {
+  .content {
+    font-size: 16px;
+    padding: 2em;
+    width: 80%;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+  
+  .summary {
+    background-size: 64px;
+  }
+  
+  .work-experience {
+    background-size: 64px;
+  }
+  
+  .education {
+    background-size: 64px;
+  }
+  
+  .skills {
+    background-size: 64px;
+  }
+}
+
+@media screen and (max-width: 299px) {
+  .content {
+    font-size: 16px;
+    padding: 2em;
+    width: 80%;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .summary {
+    background-size: 64px;
+  }
+  
+  .work-experience {
+    background-size: 64px;
+  }
+  
+  .education {
+    background-size: 64px;
+  }
+  
+  .skills {
+    background-size: 64px;
+  }
 }
 
 /* BOTTOM MENU */
