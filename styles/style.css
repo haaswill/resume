@@ -98,7 +98,7 @@ line:nth-child(6) {
   background-color: #363131;
   margin: 1em 0;
   max-height: 50px;
-  max-width: 500;
+  max-width: 500px;
   padding: 1em;
   stroke: #fbfbfb;
 	transform: translatez(0);
