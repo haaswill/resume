@@ -178,6 +178,10 @@ line:nth-child(6) {
   .header-title-container {
     width: 280px;
   }
+
+  .subtitle {
+    max-width: 400px;
+  }
 }
 
 @media screen and (max-width: 299px) {
@@ -187,6 +191,10 @@ line:nth-child(6) {
 
   .header-title-container {
     width: 250px;
+  }
+
+  .subtitle {
+    max-width: 250px;
   }
 }
 
