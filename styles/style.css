@@ -31,7 +31,7 @@ a {
   font-size: 16px;
   font-style: unset;
   justify-content: center;
-  height: 5vh;
+  height: 2em;
   padding: 1em 0;
   z-index: 999;
   text-align: center;
@@ -53,7 +53,7 @@ a {
   background-size: 5em;
   display: flex;
   flex-direction: column;
-  height: 90vh;
+  height: 90%;
   justify-content: center;
   padding: 1em;
 }
@@ -172,7 +172,7 @@ line:nth-child(6) {
 
 @media screen and (max-width: 519px) and (min-width: 300px) {
   .header-title {
-    font-size: 40px;    
+    font-size: 38px;    
   } 
 
   .header-title-container {
@@ -208,7 +208,7 @@ line:nth-child(6) {
 }
 
 .main-section:not(:last-of-type) {
-  border-bottom: 7vh #1b1b1b solid;
+  border-bottom: 4em #1b1b1b solid;
 }
 
 .main-section > .title, .content {
@@ -331,6 +331,6 @@ line:nth-child(6) {
 
 .bottom-menu {
   background-color: #1b1b1b;
-  height: 10vh;
+  height: 5em;
   position: fixed;
 }
