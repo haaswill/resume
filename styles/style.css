@@ -215,6 +215,17 @@ line:nth-child(6) {
   width: 50%;
 }
 
+.death-by-bullet-points {
+}
+
+.death-by-bullet-points li {
+  list-style: none;
+}
+
+.emoji {
+  font-size: 25px;
+}
+
 .main-section {
   align-items: center;
   display: flex;
@@ -244,6 +255,12 @@ line:nth-child(6) {
   text-align: center;
   text-transform: uppercase;
   width: auto;
+}
+
+.about-me {
+  background: url(./images/charlie-brown.svg);
+  background-color: #44bbff;
+  background-size: 160px;
 }
 
 .summary {
