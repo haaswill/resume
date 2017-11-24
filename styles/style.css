@@ -17,6 +17,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 /* HEADER */
 
 .blink {
@@ -208,6 +212,16 @@ line:nth-child(6) {
 
 /* BODY */
 
+.card-header {
+  background-color: #1dabb8;
+  color: #44bbff;
+}
+
+.comment-code {
+  color: #4e7836;
+  margin: 1em;
+}
+
 .content {
   background-color: #1b1b1b;
   font-size: 20px;
@@ -216,14 +230,22 @@ line:nth-child(6) {
 }
 
 .death-by-bullet-points {
+  padding: 0;
 }
 
-.death-by-bullet-points li {
-  list-style: none;
+.link {
+  color: #fd084a;
+  text-decoration: underline;
 }
 
-.emoji {
-  font-size: 25px;
+.summary .death-by-bullet-points::after {
+  color: #4e7836;
+  content: "*/";
+}
+
+.summary .death-by-bullet-points::before {
+  color: #4e7836;
+  content: "/*";
 }
 
 .main-section {
@@ -257,15 +279,21 @@ line:nth-child(6) {
   width: auto;
 }
 
-.about-me {
+.summary {
+  background: url(./images/x-equals.svg);
+  background-color: #1dabb8;
+  background-size: 160px;
+}
+
+.fun-facts {
   background: url(./images/charlie-brown.svg);
   background-color: #44bbff;
   background-size: 160px;
 }
 
-.summary {
-  background: url(./images/x-equals.svg);
-  background-color: #1dabb8;
+.interests {
+  background: url(./images/endless-clouds.svg);
+  background-color: #e01931;
   background-size: 160px;
 }
 
@@ -316,6 +344,14 @@ line:nth-child(6) {
   }
   
   .summary {
+    background-size: 60px;
+  }
+  
+  .fun-facts {
+    background-size: 64px;
+  }
+    
+  .interests {
     background-size: 64px;
   }
   
@@ -324,7 +360,7 @@ line:nth-child(6) {
   }
   
   .education {
-    background-size: 64px;
+    background-size: 104px;
   }
   
   .skills {
@@ -347,6 +383,14 @@ line:nth-child(6) {
     background-size: 64px;
   }
   
+  .fun-facts {
+    background-size: 64px;
+  }
+  
+  .interests {
+    background-size: 64px;
+  }
+  
   .work-experience {
     background-size: 64px;
   }
@@ -358,12 +402,4 @@ line:nth-child(6) {
   .skills {
     background-size: 64px;
   }
-}
-
-/* BOTTOM MENU */
-
-.bottom-menu {
-  background-color: #1b1b1b;
-  height: 5em;
-  position: fixed;
 }
