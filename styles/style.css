@@ -212,10 +212,27 @@ line:nth-child(6) {
 
 /* BODY */
 
+.card {
+  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: auto;
+  width: auto;
+}
+
+.card p {
+  display: none;
+}
+
 .card-header {
   background-color: #fbfbfb;
-  height: 4em;
-  width: 4em;
+  height: auto;
+  width: auto;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .comment-code {
