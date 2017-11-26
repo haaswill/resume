@@ -213,13 +213,18 @@ line:nth-child(6) {
 /* BODY */
 
 .card-header {
-  background-color: #1dabb8;
-  color: #44bbff;
+  background-color: #fbfbfb;
+  height: 4em;
+  width: 4em;
 }
 
 .comment-code {
   color: #4e7836;
-  margin: 1em;
+  margin: 1em 0 1em 1em;
+}
+
+.container {
+  height: 100%;
 }
 
 .content {
@@ -231,21 +236,30 @@ line:nth-child(6) {
 
 .death-by-bullet-points {
   padding: 0;
+  margin: 0;
+}
+
+.education {
+  background: url(./images/overlapping-hexagons.svg);
+  background-color: #897fba;
+  background-size: 160px;
+}
+
+.fun-facts {
+  background: url(./images/charlie-brown.svg);
+  background-color: #44bbff;
+  background-size: 120px;
+}
+
+.interests {
+  background: url(./images/endless-clouds.svg);
+  background-color: #e01931;
+  background-size: 160px;
 }
 
 .link {
   color: #fd084a;
   text-decoration: underline;
-}
-
-.summary .death-by-bullet-points::after {
-  color: #4e7836;
-  content: "*/";
-}
-
-.summary .death-by-bullet-points::before {
-  color: #4e7836;
-  content: "/*";
 }
 
 .main-section {
@@ -265,6 +279,36 @@ line:nth-child(6) {
   z-index: 999;
 }
 
+.resume {
+  height: 100%;
+}
+
+.skills {
+  background: url(./images/hexagons.svg);
+  background-color: #FC6042;
+  background-size: 64px;
+}
+
+.subheading {
+  margin: 1em 0;
+}
+
+.summary {
+  background: url(./images/x-equals.svg);
+  background-color: #1dabb8;
+  background-size: 160px;
+}
+
+.summary .death-by-bullet-points::after {
+  color: #4e7836;
+  content: "*/";
+}
+
+.summary .death-by-bullet-points::before {
+  color: #4e7836;
+  content: "/*";
+}
+
 .title {
   background-color: #1b1b1b;
   color: #fbfbfb;
@@ -279,54 +323,16 @@ line:nth-child(6) {
   width: auto;
 }
 
-.summary {
-  background: url(./images/x-equals.svg);
-  background-color: #1dabb8;
-  background-size: 160px;
-}
-
-.fun-facts {
-  background: url(./images/charlie-brown.svg);
-  background-color: #44bbff;
-  background-size: 160px;
-}
-
-.interests {
-  background: url(./images/endless-clouds.svg);
-  background-color: #e01931;
-  background-size: 160px;
-}
-
 .work-experience {
   background: url(./images/yyy.svg);
   background-color: #fcb941;
   background-size: 160px;
 }
 
-.education {
-  background: url(./images/overlapping-hexagons.svg);
-  background-color: #897fba;
-  background-size: 160px;
-}
-
-.skills {
-  background: url(./images/hexagons.svg);
-  background-color: #FC6042;
-  background-size: 64px;
-}
-
-.container {
-  height: 100%;
-}
-
-.resume {
-  height: 100%;
-}
-
 @media screen and (max-width: 699px) and (min-width: 520px) {
   .content {
     font-size: 16px;
-    padding: 2em;
+    padding: 1em;
     width: 80%;
   }
 
@@ -335,8 +341,8 @@ line:nth-child(6) {
 @media screen and (max-width: 519px) and (min-width: 300px) {
   .content {
     font-size: 16px;
-    padding: 2em;
-    width: 80%;
+    padding: 1em;
+    width: 90%;
   }
 
   .title {
@@ -348,7 +354,7 @@ line:nth-child(6) {
   }
   
   .fun-facts {
-    background-size: 64px;
+    background-size: 50px;
   }
     
   .interests {
@@ -360,19 +366,19 @@ line:nth-child(6) {
   }
   
   .education {
-    background-size: 104px;
+    background-size: 70px;
   }
   
   .skills {
-    background-size: 64px;
+    background-size: 40px;
   }
 }
 
-@media screen and (max-width: 299px) {
+@media screen and (max-width: 299px) {  
   .content {
-    font-size: 16px;
-    padding: 2em;
-    width: 80%;
+    font-size: 14px;
+    padding: 1em;
+    width: 100%;
   }
 
   .title {
@@ -380,26 +386,26 @@ line:nth-child(6) {
   }
 
   .summary {
-    background-size: 64px;
+    background-size: 40px;
   }
   
   .fun-facts {
-    background-size: 64px;
+    background-size: 40px;
   }
   
   .interests {
-    background-size: 64px;
+    background-size: 40px;
   }
   
   .work-experience {
-    background-size: 64px;
+    background-size: 40px;
   }
   
   .education {
-    background-size: 64px;
+    background-size: 40px;
   }
   
   .skills {
-    background-size: 64px;
+    background-size: 40px;
   }
 }
