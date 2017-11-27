@@ -212,29 +212,6 @@ line:nth-child(6) {
 
 /* BODY */
 
-.card {
-  flex: 1;
-  flex-grow: 1;
-  flex-shrink: 1;
-  height: auto;
-  width: auto;
-}
-
-.card p {
-  display: none;
-}
-
-.card-header {
-  background-color: #fbfbfb;
-  height: auto;
-  width: auto;
-}
-
-.cards-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .comment-code {
   color: #4e7836;
   margin: 1em 0 1em 1em;
@@ -256,7 +233,7 @@ line:nth-child(6) {
   padding: 0;
 }
 
-.death-by-bullet-points.job {
+.death-by-bullet-points .lesser {
   margin: 1em;
   padding: 0 1em;
 }
@@ -282,6 +259,10 @@ line:nth-child(6) {
 .job-responsibilities {
   list-style-type: square;
   margin: 0.5em;
+}
+
+.lesser::before {
+  content: "> ";
 }
 
 .link {
@@ -321,18 +302,21 @@ line:nth-child(6) {
 }
 
 .subheading.dates {
-  margin-top: 0;
+  color: #6f6f6f;
   font-size: 16px;
-}
-
-.subheading.job-title {
-  font-size: 20;
   margin-top: 0;
 }
 
 .subheading.location {
-  margin-bottom: 0;
+  color: #6f6f6f;
   font-size: 16px;
+  margin-bottom: 0;
+}
+
+.subheading.uppercase {
+  font-size: 20px;
+  margin-top: 0;
+  text-transform: uppercase;
 }
 
 .summary {
