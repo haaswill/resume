@@ -252,8 +252,13 @@ line:nth-child(6) {
 }
 
 .death-by-bullet-points {
-  padding: 0;
   margin: 0;
+  padding: 0;
+}
+
+.death-by-bullet-points.job {
+  margin: 1em;
+  padding: 0 1em;
 }
 
 .education {
@@ -272,6 +277,11 @@ line:nth-child(6) {
   background: url(./images/endless-clouds.svg);
   background-color: #e01931;
   background-size: 160px;
+}
+
+.job-responsibilities {
+  list-style-type: square;
+  margin: 0.5em;
 }
 
 .link {
@@ -308,6 +318,21 @@ line:nth-child(6) {
 
 .subheading {
   margin: 1em 0;
+}
+
+.subheading.dates {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.subheading.job-title {
+  font-size: 20;
+  margin-top: 0;
+}
+
+.subheading.location {
+  margin-bottom: 0;
+  font-size: 16px;
 }
 
 .summary {
