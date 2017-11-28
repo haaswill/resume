@@ -1,8 +1,8 @@
 /* BASE */
 
 html, body {
-  color: #eeeeee;
-  background-color: #3f3f3f;
+  color: #EEEEEE;
+  background-color: #3F3F3F;
   font-family: 'Inconsolata', sans-serif;
   height: 100%;
 }
@@ -28,7 +28,7 @@ li {
 }
 
 .contact-info {
-  background-color: #1b1b1b;
+  background-color: #1B1B1B;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.16), 0 0 6px rgba(0, 0, 0, 0.23);
   display: flex;
   flex-direction: column;
@@ -51,13 +51,13 @@ li {
 }
 
 .email:hover {
-  color: #fd084a;
+  color: #FD084A;
 }
 
 .header {
   align-items: center;
   background: url(./images/hideout.svg);
-  background-color: #ffdeed;
+  background-color: #FFDEED;
   background-size: 5em;
   display: flex;
   flex-direction: column;
@@ -108,7 +108,7 @@ line:nth-child(6) {
   height: 50px;
   width: 500px;
   padding: 16px;
-  stroke: #fbfbfb;
+  stroke: #FBFBFB;
 	transform: translatez(0);
 }
 
@@ -126,7 +126,7 @@ line:nth-child(6) {
   animation-fill-mode: forwards;
   animation-name: text;
   animation-timing-function: ease-in;
-  fill: #fbfbfb;
+  fill: #FBFBFB;
   font-size: 30px;
   opacity: 0;
   width: 100%;
@@ -213,7 +213,7 @@ line:nth-child(6) {
 /* BODY */
 
 .comment-code {
-  color: #4e7836;
+  color: #4E7836;
   margin: 1em 0 1em 1em;
 }
 
@@ -222,7 +222,7 @@ line:nth-child(6) {
 }
 
 .content {
-  background-color: #1b1b1b;
+  background-color: #1B1B1B;
   font-size: 20px;
   padding: 2em;
   width: 50%;
@@ -240,20 +240,20 @@ line:nth-child(6) {
 
 .education {
   background: url(./images/overlapping-hexagons.svg);
-  background-color: #897fba;
+  background-color: #897FBA;
   background-size: 160px;
 }
 
 .fun-facts {
-  background: url(./images/charlie-brown.svg);
-  background-color: #44bbff;
-  background-size: 120px;
+  background: url(./images/leaf.svg);
+  background-color: #A3C4BC;
+  background-size: 200px;
 }
 
 .interests {
   background: url(./images/endless-clouds.svg);
-  background-color: #e01931;
-  background-size: 160px;
+  background-color: #BF211E;
+  background-size: 260px;
 }
 
 .job-responsibilities {
@@ -266,7 +266,7 @@ line:nth-child(6) {
 }
 
 .link {
-  color: #fd084a;
+  color: #FD084A;
   text-decoration: underline;
 }
 
@@ -279,7 +279,7 @@ line:nth-child(6) {
 }
 
 .main-section:not(:last-of-type) {
-  border-bottom: 4em #1b1b1b solid;
+  border-bottom: 4em #1B1B1B solid;
 }
 
 .main-section > .title, .content {
@@ -302,13 +302,13 @@ line:nth-child(6) {
 }
 
 .subheading.dates {
-  color: #6f6f6f;
+  color: #6F6F6F;
   font-size: 16px;
   margin-top: 0;
 }
 
 .subheading.location {
-  color: #6f6f6f;
+  color: #6F6F6F;
   font-size: 16px;
   margin-bottom: 0;
 }
@@ -320,24 +320,24 @@ line:nth-child(6) {
 }
 
 .summary {
-  background: url(./images/x-equals.svg);
-  background-color: #1dabb8;
-  background-size: 160px;
+  background: url(./images/anchors-away.svg);
+  background-color: #3D5A6C;
+  background-size: 200px;
 }
 
 .summary .death-by-bullet-points::after {
-  color: #4e7836;
+  color: #4E7836;
   content: "*/";
 }
 
 .summary .death-by-bullet-points::before {
-  color: #4e7836;
+  color: #4E7836;
   content: "/*";
 }
 
 .title {
-  background-color: #1b1b1b;
-  color: #fbfbfb;
+  background-color: #1B1B1B;
+  color: #FBFBFB;
   display: inline-block;
   font-size: 48px;
   font-weight: 800;
@@ -351,7 +351,7 @@ line:nth-child(6) {
 
 .work-experience {
   background: url(./images/yyy.svg);
-  background-color: #fcb941;
+  background-color: #FCB941;
   background-size: 160px;
 }
 
@@ -376,19 +376,19 @@ line:nth-child(6) {
   }
   
   .summary {
-    background-size: 60px;
+    background-size: 100px;
   }
   
   .fun-facts {
-    background-size: 50px;
+    background-size: 100px;
   }
     
   .interests {
-    background-size: 64px;
+    background-size: 100px;
   }
   
   .work-experience {
-    background-size: 64px;
+    background-size: 100px;
   }
   
   .education {
