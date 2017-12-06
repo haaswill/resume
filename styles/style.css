@@ -321,6 +321,7 @@ line:nth-child(6) {
 
 .memes-container {
   height: 70vh;
+  width: 100%;
 }
 
 .skills {
