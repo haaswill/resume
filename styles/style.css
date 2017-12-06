@@ -375,6 +375,10 @@ line:nth-child(6) {
   width: auto;
 }
 
+.udemy {
+  color: #EC5252;
+}
+
 .work-experience {
   background: url(./images/yyy.svg);
   background-color: #FCB941;
