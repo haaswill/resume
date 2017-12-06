@@ -313,14 +313,20 @@ line:nth-child(6) {
   z-index: 999;
 }
 
-.resume {
-  height: 100%;
+.memes {
+  background: url(./images/kiwi.svg);
+  background-color: #8F6F40;
+  background-size: 120px;
+}
+
+.memes-container {
+  height: 70vh;
 }
 
 .skills {
   background: url(./images/hexagons.svg);
   background-color: #FC6042;
-  background-size: 64px;
+  background-size: 120px;
 }
 
 .subheading {
@@ -385,13 +391,12 @@ line:nth-child(6) {
   background-size: 160px;
 }
 
-@media screen and (max-width: 699px) and (min-width: 520px) {
+@media screen and (max-width: 800px) and (min-width: 520px) {
   .content {
     font-size: 16px;
     padding: 1em;
     width: 80%;
   }
-
 }
 
 @media screen and (max-width: 519px) and (min-width: 300px) {
@@ -414,6 +419,10 @@ line:nth-child(6) {
   }
     
   .interests {
+    background-size: 100px;
+  }
+  
+  .memes {
     background-size: 100px;
   }
   
@@ -446,6 +455,10 @@ line:nth-child(6) {
   }
   
   .fun-facts {
+    background-size: 40px;
+  }
+  
+  .memes {
     background-size: 40px;
   }
   
