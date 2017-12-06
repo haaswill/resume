@@ -319,7 +319,9 @@ line:nth-child(6) {
   background-size: 120px;
 }
 
-.memes-container {
+.memes-container, .memes-container>* {
+  display: flex;
+  justify-content: center;
   height: 70vh;
   width: 100%;
 }
@@ -398,6 +400,10 @@ line:nth-child(6) {
     padding: 1em;
     width: 80%;
   }
+
+  .memes-container, .memes-container>* {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 519px) and (min-width: 300px) {
@@ -425,6 +431,10 @@ line:nth-child(6) {
   
   .memes {
     background-size: 100px;
+  }
+  
+  .memes-container, .memes-container>* {
+    width: inherit;
   }
   
   .work-experience {
