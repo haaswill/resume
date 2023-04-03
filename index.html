@@ -1,276 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110358799-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-110358799-1');
-  </script>
-  <title>Willian Haas</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Me as a Web Developer">
-  <meta name="author" content="Willian Haas">
-  <meta name="keywords" content="Willian Haas, Javascript, Web Developer, Developer, Front-end, React">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-  <link href="styles/style.css" rel="stylesheet">
-</head>
-<body>
-  <div class="container">
-    <section class="header">
-      <div class="header-title-container">
-        <p class="header-title" id="title"></p>
-        <p class="header-title blink">|</p>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-110358799-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-110358799-1');
+    </script>
+    <title>Willian Haas</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="My Resume" />
+    <meta name="author" content="Willian Haas" />
+    <meta
+      name="keywords"
+      content="Willian Haas, Javascript, Web Developer, Developer, Front-end, React"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inconsolata"
+      rel="stylesheet"
+    />
+    <link href="styles/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="header">
+        <div class="header-title-container">
+          <p class="header-title" id="title"></p>
+          <p class="header-title blink">|</p>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="subtitle"
+          viewBox="0 0 500 50"
+        >
+          <text x="105" y="35">front-end developer</text>
+          <line x1="230" y1="0" x2="230" y2="25" />
+          <line x1="230" y1="25" x2="230" y2="50" />
+          <line x1="230" y1="0" x2="230" y2="50" />
+          <line x1="230" y1="0" x2="230" y2="25" />
+          <line x1="230" y1="25" x2="230" y2="50" />
+        </svg>
+        <div class="social-networks-container">
+          <a href="https://codepen.io/haaswill" target="_blank">
+            <img
+              class="social-network"
+              src="./styles/images/codepen.svg"
+              alt="codepen link"
+              title="CodePen"
+            />
+          </a>
+          <a href="https://github.com/haaswill" target="_blank">
+            <img
+              class="social-network"
+              src="./styles/images/github.svg"
+              alt="github link"
+              title="GitHub"
+            />
+          </a>
+          <a href="https://leetcode.com/haaswill" target="_blank">
+            <img
+              class="social-network"
+              src="./styles/images/leetcode.svg"
+              alt="leetcode link"
+              title="LeetCode"
+            />
+          </a>
+        </div>
+      </section>
+      <address class="contact-info">
+        <p>British Columbia - Canada</p>
+      </address>
+      <div class="body">
+        <section class="main-section summary">
+          <h3 class="title">#Summary</h3>
+          <div class="content">
+            <ul class="death-by-bullet-points">
+              <li class="comment-code">
+                Experienced Front-End Developer with 5 years of expertise in
+                React and other modern front-end technologies such as
+                TypeScript, GraphQL, Jest and Styled- Components. Proven ability
+                to develop innovative solutions to complex problems.
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="main-section fun-facts">
+          <h3 class="title">#Fun Facts</h3>
+          <div class="content">
+            <h4 class="subheading">✅ yes, I am Brazilian, but..</h4>
+            <ul class="death-by-bullet-points">
+              <li>❌ no, I don't play soccer</li>
+              <li>❌ no, I don't know Samba</li>
+              <li>❌ no, I have never had a monkey</li>
+              <li>
+                ✅ I used to have a guinea pig though,
+                <a
+                  class="link"
+                  href="https://www.instagram.com/p/k0lz9tnppQ/?taken-by=haaswill"
+                  target="_blank"
+                  >here's a picture of him</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="main-section interests">
+          <h3 class="title">#Interests</h3>
+          <div class="content">
+            <h4 class="subheading">📺 top 5 series</h4>
+            <ul class="death-by-bullet-points">
+              <li>❤️ Sense8</li>
+              <li>🕵️‍ Sherlock</li>
+              <li>💥 The Boys</li>
+              <li>🦸‍♂️ Invincible</li>
+              <li>✡️ Supernatural</li>
+            </ul>
+            <h4 class="subheading">🤘 favorite bands</h4>
+            <ul class="death-by-bullet-points">
+              <li>☔️ Bring Me The Horizon</li>
+              <li>🤖 Three Days Grace</li>
+              <li>🕺 Panic! At The Disco</li>
+              <li>🌘 Breaking Benjamin</li>
+            </ul>
+          </div>
+        </section>
+        <section class="main-section work-experience">
+          <h3 class="title">#Work Experience</h3>
+          <div class="content">
+            <div class="subdivision">
+              <h4 class="subheading uppercase">Software Engineer</h4>
+              <h4 class="subheading location">
+                Quadient/Beanworks - Vancouver, Canada
+              </h4>
+              <h4 class="subheading dates">07/2021 - 02/2023</h4>
+              <ul class="death-by-bullet-points">
+                <li class="lesser">
+                  Developed features for the next-gen AP web app using
+                  Typescript and modern React.
+                </li>
+                <li class="lesser">
+                  Increased developer efficiency by creating Lit Web Components
+                  and implementing such components on Storybook in React, Vue
+                  and Angular versions.
+                </li>
+                <li class="lesser">
+                  Implemented design system components using Material UI and
+                  Styled-Components.
+                </li>
+                <li class="lesser">
+                  Tested React components and hooks using Jest and
+                  React-Testing-Library.
+                </li>
+                <li class="lesser">
+                  Enhanced multiple modules by replacing custom grid elements
+                  using AG-Grid, improving performance by 30%.
+                </li>
+              </ul>
+            </div>
+            <div class="subdivision">
+              <h4 class="subheading uppercase">Front-end & React Developer</h4>
+              <h4 class="subheading location">Domain7 - Vancouver, Canada</h4>
+              <h4 class="subheading dates">04/2018 - 06/2021</h4>
+              <ul class="death-by-bullet-points">
+                <li class="lesser">
+                  Developed web apps for a health and travel insurance company
+                  used by millions of Canadians, reducing paper-based claims and
+                  improving user experience.
+                </li>
+                <li class="lesser">
+                  Enhanced the program search process for a university in
+                  California using React and consuming an Azure Cognitive Search
+                  back-end.
+                </li>
+                <li class="lesser">
+                  Refactored an e-commerce solution used by thousands of
+                  wineries worldwide using Styled-Components.
+                </li>
+                <li class="lesser">
+                  Improved data tracking and analytics by creating custom tags
+                  in Google Tag Manager and Google Analytics.
+                </li>
+                <li class="lesser">
+                  Created unit tests and end-to-end tests with Jest, Enzyme and
+                  Cypress.
+                </li>
+              </ul>
+            </div>
+            <div class="subdivision">
+              <h4 class="subheading uppercase">Full Stack .NET Developer</h4>
+              <h4 class="subheading location">
+                Atinfo - Flores da Cunha, Brazil
+              </h4>
+              <h4 class="subheading dates">03/2016 - 06/2017</h4>
+              <ul class="death-by-bullet-points">
+                <li class="lesser">
+                  Redesigned a legacy PHP web app used by representatives of a
+                  furniture manufacturer using the .NET MVC and .NET Web API.
+                </li>
+                <li class="lesser">
+                  Redesigned a legacy Apex application using .NET MVC and .NET
+                  Web API.
+                </li>
+                <li class="lesser">
+                  Conducted user feedback sessions to enhance next-gen web apps.
+                </li>
+              </ul>
+            </div>
+            <div class="subdivision">
+              <h4 class="subheading uppercase">
+                Junior Full Stack .NET Developer
+              </h4>
+              <h4 class="subheading location">Ahead — Caxias do Sul, Brazil</h4>
+              <h4 class="subheading dates">09/2015 - 02/2016</h4>
+              <ul class="death-by-bullet-points">
+                <li class="lesser">
+                  Created a program for developers to generate common source
+                  code files for the ERP.
+                </li>
+                <li class="lesser">
+                  Implemented features for the new ERP using .NET MVC.
+                </li>
+                <li class="lesser">
+                  Provided customer support and monitored the most requested
+                  features according to users' feedback.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="main-section education">
+          <h3 class="title">#Education</h3>
+          <div class="content">
+            <h4 class="subheading uppercase">Formal Education</h4>
+            <div class="subdivision">
+              <h4 class="subheading location">
+                Greystone College — Vancouver, Canada
+              </h4>
+              <h4 class="subheading dates">12/2017 - 12/2018</h4>
+              <ul class="death-by-bullet-points">
+                <li class="lesser">
+                  International Business Management Co-op Diploma
+                </li>
+              </ul>
+            </div>
+            <div class="subdivision">
+              <h4 class="subheading location">CETEC — Caxias do Sul, Brazil</h4>
+              <h4 class="subheading dates">03/2013 - 08/2015</h4>
+              <ul class="death-by-bullet-points">
+                <li class="lesser">
+                  IT Support/Programming certificate and 6-month internship.
+                </li>
+              </ul>
+            </div>
+            <h4 class="subheading uppercase">Informal Education</h4>
+            <div class="subdivision">
+              <ul class="death-by-bullet-points">
+                <li class="lesser">
+                  React Native: Advanced Concepts -
+                  <a
+                    class="udemy"
+                    href="https://www.udemy.com/user/willian-haas/"
+                    target="_blank"
+                    >udemy.com</a
+                  >
+                </li>
+                <li class="lesser">
+                  Advanced React and Redux -
+                  <a
+                    class="udemy"
+                    href="https://www.udemy.com/user/willian-haas/"
+                    target="_blank"
+                    >udemy.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="main-section skills">
+          <h3 class="title">#Skills</h3>
+          <div class="content">
+            <ul class="death-by-bullet-points">
+              <li class="lesser">Javascript (EcmaScript 2021)</li>
+              <li class="lesser">React, Create-React-App, NextJS, Redux</li>
+              <li class="lesser">
+                NodeJS, Express, Passport, MongoDB, Mongoose
+              </li>
+              <li class="lesser">
+                SASS, CSS Modules, Styled-Components, MaterialUI
+              </li>
+              <li class="lesser">Jest, Enzyme, Cypress</li>
+              <li class="lesser">React Native, Expo</li>
+              <li class="lesser">.NET(Web API v2.0, MVC v6.0)</li>
+              <li class="lesser">SQL Server</li>
+            </ul>
+          </div>
+        </section>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" class="subtitle" viewBox="0 0 500 50">
-        <text x="60" y="35">full-stack web developer</text>
-        <line x1="230" y1="0" x2="230" y2="25" />
-        <line x1="230" y1="25" x2="230" y2="50" />
-        <line x1="230" y1="0" x2="230" y2="50" />
-        <line x1="230" y1="0" x2="230" y2="25" />
-        <line x1="230" y1="25" x2="230" y2="50" />
-      </svg>
-      <div class="social-networks-container">
-        <a href="https://codepen.io/haaswill" target="_blank">
-          <img class="social-network" src="./styles/images/codepen.svg" alt="codepen svg">
-        </a>
-        <a href="https://github.com/haaswill" target="_blank">
-          <img class="social-network" src="./styles/images/github.svg" alt="github svg">
-        </a>
-        <a href="https://www.instagram.com/haaswill" target="_blank">
-          <img class="social-network" src="./styles/images/instagram.svg" alt="instagram svg">
-        </a>
-      </div>
-    </section>
-    <address class="contact-info">
-      <p>
-        <a class="email" href="mailto:haaswillian@gmail.com">haaswillian@gmail.com</a>
-        / Richmond, British Columbia - Canada
-      </p>
-    </address>
-    <div class="body">
-      <section class="main-section summary">
-        <h3 class="title">#Summary</h3>
-        <div class="content">
-          <ul class="death-by-bullet-points">
-            <li class="comment-code">I am a web developer aspiring to become a full-stack Javascript developer. It is my passion to work and learn more about React and I would love to work with NodeJS and React Native.
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="main-section fun-facts">
-        <h3 class="title">#Fun Facts</h3>
-        <div class="content">
-          <h4 class="subheading">✅ yes, I am Brazilian, but..</h4>
-          <ul class="death-by-bullet-points">
-            <li>❌ no, I don't play soccer</li>
-            <li>❌ no, I don't know Samba</li>
-            <li>❌ no, I have never had a monkey</li>
-            <li>✅ I used to have a guinea pig though,
-              <a class="link" href="https://www.instagram.com/p/k0lz9tnppQ/?taken-by=haaswill" target="_blank">here's a picture of him</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="main-section interests">
-        <h3 class="title">#Interests</h3>
-        <div class="content">
-          <h4 class="subheading">📺 top 5 series</h4>
-          <ul class="death-by-bullet-points">
-            <li>❤️ Sense8</li>
-            <li>🕵️‍ Sherlock</li>
-            <li>💥 The Boys</li>
-            <li>🦸‍♂️ Invincible</li>
-            <li>✡️ Supernatural</li>
-          </ul>
-          <h4 class="subheading">🤘 favorite bands</h4>
-          <ul class="death-by-bullet-points">
-            <li>☔️ Bring Me The Horizon</li>
-            <li>🤖 Three Days Grace</li>
-            <li>🕺 Panic! At The Disco</li>
-            <li>🌘 Breaking Benjamin</li>
-          </ul>
-        </div>
-      </section>
-      <section class="main-section work-experience">
-        <h3 class="title">#Work Experience</h3>
-        <div class="content">
-          <div class="subdivision">
-            <h4 class="subheading uppercase">Software Engineer</h4>
-            <h4 class="subheading location">Quadient/Beanworks - Vancouver, Canada</h4>
-            <h4 class="subheading dates">07/2021 - 02/2023</h4>
-            <ul class="death-by-bullet-points">
-              <li class="lesser">
-                Developed features for the next-gen accounts payable web app using Typescript and modern React.
-              </li>
-              <li class="lesser">
-                Created Web Components using Lit and implemented them on Storybook in React, Vue and Angular versions to be reused by devs on a new user hub for Quadient’s applications.
-              </li>
-              <li class="lesser">
-                Implemented design system on Storybook using MaterialUI.
-              </li>
-              <li class="lesser">
-                Used Jest for unit testing.
-              </li>
-              <li class="lesser">
-                Refactored custom grid elements into AG-Grid.
-              </li>
-            </ul>
-          </div>
-          <div class="subdivision">
-            <h4 class="subheading uppercase">Front-end & React Developer</h4>
-            <h4 class="subheading location">Domain7 - Vancouver, Canada</h4>
-            <h4 class="subheading dates">04/2018 - 06/2021</h4>
-            <ul class="death-by-bullet-points">
-              <li class="lesser">
-                Developed React apps using NextJS and Create-React-App.
-              </li>
-              <li class="lesser">
-                Wrote tests with Jest and Cypress.
-              </li>
-              <li class="lesser">
-                Implemented Google Tag Manager and Google Analytics in React projects.
-              </li>
-              <li class="lesser">
-                Developed a React app that used Azure Cognitive Search for a University to display its courses based on the user’s preferences.
-              </li>
-              <li class="lesser">
-                Worked on large scale projects for various clients including a health insurance company and a leading university.
-              </li>
-            </ul>
-          </div>
-          <div class="subdivision">
-            <h4 class="subheading uppercase">Full Stack .NET Developer</h4>
-            <h4 class="subheading location">Atinfo - Flores da Cunha, Brazil</h4>
-            <h4 class="subheading dates">03/2016 - 06/2017</h4>
-            <ul class="death-by-bullet-points">
-              <li class="lesser">
-                Redesigned a PHP web app used by the representatives of a furniture company using mainly .NET frameworks: Web API and MVC.
-              </li>
-              <li class="lesser">
-                Redesigned an Apex(...shivers...) web app using mainly .NET frameworks: Web API and MVC.
-              </li>
-            </ul>
-          </div>
-          <div class="subdivision">
-            <h4 class="subheading uppercase">Full Stack Junior .NET Developer</h4>
-            <h4 class="subheading location">Ahead — Caxias do Sul, Brazil</h4>
-            <h4 class="subheading dates">09/2015 - 02/2016</h4>
-            <ul class="death-by-bullet-points">
-              <li class="lesser">
-                Developed a program to autogenerate common code files for the company’s ERP web app.
-              </li>
-              <li class="lesser">
-                Helped to develop the ERP web app using the MVC .NET framework.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="main-section education">
-        <h3 class="title">#Education</h3>
-        <div class="content">
-          <h4 class="subheading uppercase">Formal Education</h4>
-          <div class="subdivision">
-            <h4 class="subheading location">Greystone College — Vancouver, Canada</h4>
-            <h4 class="subheading dates">12/2017 - Present</h4>
-            <ul class="death-by-bullet-points">
-              <li class="lesser">International Business Management Co-op Diploma</li>
-            </ul>
-          </div>
-          <div class="subdivision">
-            <h4 class="subheading location">CETEC — Caxias do Sul, Brazil</h4>
-            <h4 class="subheading dates">03/2013 - 08/2015</h4>
-            <ul class="death-by-bullet-points">
-              <li class="lesser">IT Support/Programming certificate and 6-month internship.</li>
-            </ul>
-          </div>
-          <div class="subdivision">
-            <h4 class="subheading location">CETEC — Caxias do Sul, Brazil</h4>
-            <h4 class="subheading dates">03/2012 - 12/2014</h4>
-            <ul class="death-by-bullet-points">
-              <li class="lesser">High School.</li>
-            </ul>
-          </div>
-          <h4 class="subheading uppercase">Informal Education</h4>
-          <div class="subdivision">
-            <ul class="death-by-bullet-points">
-              <li class="lesser">React Native: Advanced Concepts -
-                <a class="udemy" href="https://www.udemy.com/user/willian-haas/" target="_blank">udemy.com</a>
-              </li>
-              <li class="lesser">Advanced React and Redux -
-                <a class="udemy" href="https://www.udemy.com/user/willian-haas/" target="_blank">udemy.com</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="main-section skills">
-        <h3 class="title">#Skills</h3>
-        <div class="content">
-          <ul class="death-by-bullet-points">
-            <li class="lesser">Javascript (EcmaScript 2021)</li>
-            <li class="lesser">React, Create-React-App, NextJS, Redux</li>
-            <li class="lesser">NodeJS, Express, Passport, MongoDB, Mongoose</li>
-            <li class="lesser">SASS, CSS Modules, Styled-Components, MaterialUI</li>
-            <li class="lesser">Jest, Enzyme, Cypress</li>
-            <li class="lesser">React Native, Expo</li>
-            <li class="lesser">.NET(Web API v2.0, MVC v6.0)</li>
-            <li class="lesser">SQL Server</li>
-          </ul>
-        </div>
-      </section>
     </div>
-  </div>
-  <script type="text/javascript">
-    const words = ["hi i'm will."];
-    let i = 0;
-    let timer;
-    function typingEffect() {
-      let word = words[i].split("");
-      var loopTyping = function () {
-        if (word.length > 0) {
-          document.getElementById('title').innerHTML += word.shift();
-        } else {
-          clearTimeout(timer);
-          deletingEffect();
-          return false;
-        };
-        timer = setTimeout(loopTyping, 200);
-      };
-      loopTyping();
-    }
-    function deletingEffect() {
-      let word = words[i].split("");
-      var loopDeleting = function () {
-        if (word.length > 0) {
-          word.pop();
-          document.getElementById('title').innerHTML = word.join("");
-        } else {
-          if (words.length > (i + 1)) {
-            i++;
+    <script type="text/javascript">
+      const words = ["hi i'm will."];
+      let i = 0;
+      let timer;
+      function typingEffect() {
+        let word = words[i].split('');
+        var loopTyping = function () {
+          if (word.length > 0) {
+            document.getElementById('title').innerHTML += word.shift();
           } else {
-            i = 0;
-          };
-          clearTimeout(timer);
-          typingEffect();
-          return false;
+            clearTimeout(timer);
+            deletingEffect();
+            return false;
+          }
+          timer = setTimeout(loopTyping, 200);
         };
-        timer = setTimeout(loopDeleting, 200);
-      };
-      loopDeleting();
-    }
-    typingEffect();
-  </script>
-</body>
+        loopTyping();
+      }
+      function deletingEffect() {
+        let word = words[i].split('');
+        var loopDeleting = function () {
+          if (word.length > 0) {
+            word.pop();
+            document.getElementById('title').innerHTML = word.join('');
+          } else {
+            if (words.length > i + 1) {
+              i++;
+            } else {
+              i = 0;
+            }
+            clearTimeout(timer);
+            typingEffect();
+            return false;
+          }
+          timer = setTimeout(loopDeleting, 200);
+        };
+        loopDeleting();
+      }
+      typingEffect();
+    </script>
+  </body>
 </html>
