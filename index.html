@@ -11,8 +11,8 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag('js', new Date());
-      gtag('config', 'UA-110358799-1');
+      gtag("js", new Date());
+      gtag("config", "UA-110358799-1");
     </script>
     <title>Willian Haas</title>
     <meta charset="UTF-8" />
@@ -83,7 +83,7 @@
         </div>
       </section>
       <address class="contact-info">
-        <p>British Columbia - Canada</p>
+        <p>Berlin - Germany</p>
       </address>
       <div class="body">
         <section class="main-section summary">
@@ -91,30 +91,11 @@
           <div class="content">
             <ul class="death-by-bullet-points">
               <li class="comment-code">
-                Experienced Front-End Developer with 5 years of expertise in
-                React and other modern front-end technologies such as
-                TypeScript, GraphQL, Jest and Styled- Components. Proven ability
-                to develop innovative solutions to complex problems.
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="main-section fun-facts">
-          <h3 class="title">#Fun Facts</h3>
-          <div class="content">
-            <h4 class="subheading">✅ yes, I am Brazilian, but..</h4>
-            <ul class="death-by-bullet-points">
-              <li>❌ no, I don't play soccer</li>
-              <li>❌ no, I don't know Samba</li>
-              <li>❌ no, I have never had a monkey</li>
-              <li>
-                ✅ I used to have a guinea pig though,
-                <a
-                  class="link"
-                  href="https://www.instagram.com/p/k0lz9tnppQ/?taken-by=haaswill"
-                  target="_blank"
-                  >here's a picture of him</a
-                >
+                Full-stack developer with 7+ years of front-end expertise,
+                passionate about building scalable, user-focused applications
+                that deliver measurable impact. I thrive in bridging design and
+                engineering, turning complex ideas into elegant, maintainable
+                solutions.
               </li>
             </ul>
           </div>
@@ -122,26 +103,64 @@
         <section class="main-section interests">
           <h3 class="title">#Interests</h3>
           <div class="content">
-            <h4 class="subheading">📺 top 5 series</h4>
+            <h4 class="subheading">🎮 favourite games</h4>
+            <ul class="death-by-bullet-points">
+              <li>🐛 Hollow Knight</li>
+              <li>🤖 Nier: Automata</li>
+              <li>🩸 Bloodborne</li>
+              <li>🐉 Baldur's Gate 3</li>
+              <li>👩‍🎨 Clair Obscur: Expedition 33</li>
+            </ul>
+            <h4 class="subheading">📺 favourite series</h4>
             <ul class="death-by-bullet-points">
               <li>❤️ Sense8</li>
               <li>🕵️‍ Sherlock</li>
               <li>💥 The Boys</li>
-              <li>🦸‍♂️ Invincible</li>
-              <li>✡️ Supernatural</li>
+              <li>🏥 House MD</li>
+              <li>👻 Supernatural</li>
             </ul>
-            <h4 class="subheading">🤘 favorite bands</h4>
+            <h4 class="subheading">🤘 favourite bands</h4>
             <ul class="death-by-bullet-points">
               <li>☔️ Bring Me The Horizon</li>
               <li>🤖 Three Days Grace</li>
               <li>🕺 Panic! At The Disco</li>
               <li>🌘 Breaking Benjamin</li>
+              <li>🛌 Sleep Token</li>
             </ul>
           </div>
         </section>
         <section class="main-section work-experience">
           <h3 class="title">#Work Experience</h3>
           <div class="content">
+            <div class="subdivision">
+              <h4 class="subheading uppercase">Development Engineer</h4>
+              <h4 class="subheading location">
+                Points (a Plusgrade company) - Toronto, Canada(Remote)
+              </h4>
+              <h4 class="subheading dates">05/2023 - Present</h4>
+              <ul class="death-by-bullet-points">
+                <li class="lesser">
+                  Led the Design System initiative in collaboration with the
+                  Tech Lead, creating a unified framework adopted across all
+                  partner products at Points.
+                </li>
+                <li class="lesser">
+                  Managed end-to-end production deployments, including release
+                  scheduling, monitoring, and issue resolution during production
+                  support rotations.
+                </li>
+                <li class="lesser">
+                  Developed loyalty program storefront applications—serving
+                  millions of airline partner members—such as the Subscriptions
+                  app, built from the ground up to production readiness.
+                </li>
+                <li class="lesser">
+                  Implemented a customizable currency formatting system within
+                  Salesforce Commerce Cloud, standardizing display across the
+                  full suite of applications.
+                </li>
+              </ul>
+            </div>
             <div class="subdivision">
               <h4 class="subheading uppercase">Software Engineer</h4>
               <h4 class="subheading location">
@@ -318,10 +337,10 @@
       let i = 0;
       let timer;
       function typingEffect() {
-        let word = words[i].split('');
+        let word = words[i].split("");
         var loopTyping = function () {
           if (word.length > 0) {
-            document.getElementById('title').innerHTML += word.shift();
+            document.getElementById("title").innerHTML += word.shift();
           } else {
             clearTimeout(timer);
             deletingEffect();
@@ -332,11 +351,11 @@
         loopTyping();
       }
       function deletingEffect() {
-        let word = words[i].split('');
+        let word = words[i].split("");
         var loopDeleting = function () {
           if (word.length > 0) {
             word.pop();
-            document.getElementById('title').innerHTML = word.join('');
+            document.getElementById("title").innerHTML = word.join("");
           } else {
             if (words.length > i + 1) {
               i++;
